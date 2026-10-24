@@ -1,8 +1,8 @@
 const repo='jhonatan2405/J2B-Studio-Modpacks';
-const bundled={version:'1.20.28',url:'/downloads/J2B-Studio-Client-Setup-1.20.28.exe'};
+const bundled={version:'1.20.29',url:'/downloads/J2B-Studio-Client-Setup-1.20.29.exe'};
 function applyRelease(info){
   if(!info||!info.version||!info.url)return;
-  document.querySelectorAll('.download').forEach(link=>{link.href=info.url;link.setAttribute('download','J2B-Studio-Client-Setup-1.20.28.exe');link.target='_blank';link.rel='noopener noreferrer';});
+  document.querySelectorAll('.download').forEach(link=>{link.href=info.url;link.setAttribute('download','J2B-Studio-Client-Setup-1.20.29.exe');link.target='_blank';link.rel='noopener noreferrer';});
   document.querySelectorAll('.version').forEach(label=>label.textContent=`v${info.version}`);
   document.querySelectorAll('.release').forEach(label=>label.textContent=`v${info.version} · Instalador para Windows`);
 }
